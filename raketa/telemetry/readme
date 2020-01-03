@@ -1,0 +1,4 @@
+h=10.6.4.46
+websocat ws://${h}:81/ | tee output.txt
+curl http://${h}/zero
+curl http://${h}/dump > dump
